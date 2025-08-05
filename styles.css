@@ -1,121 +1,135 @@
-/* Minimal, readable styles for a research + data portfolio */
+/* Calming, professional light palette */
 :root{
-  --bg: #0b0c10;
-  --panel: #111216;
-  --ink: #e8eaed;
-  --muted: #aeb4be;
-  --accent: #7aa2ff;
-  --card: #151821;
-  --border: #222530;
+  --bg: #F7FAFC;          /* near-white */
+  --panel: #FFFFFF;       /* white cards */
+  --ink: #1F2937;         /* slate-800 */
+  --muted: #6B7280;       /* slate-500 */
+  --accent: #3A6EA5;      /* desaturated blue */
+  --accent-weak: #D6E4F0; /* pale blue */
+  --border: #E5E7EB;      /* gray-200 */
 }
 
 *{ box-sizing: border-box; }
 html, body{ margin:0; padding:0; }
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--ink);
-  background: radial-gradient(1200px 800px at 10% 0%, #0e111a, var(--bg));
+  background: var(--bg);
 }
 
 .container{
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
+/* Header */
 .site-header{
   position: sticky;
   top: 0;
-  backdrop-filter: blur(10px);
-  background: rgba(11,12,16,0.7);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
 }
-.site-header .container{
+.header-grid{
   display: grid;
   grid-template-columns: 1fr auto;
-  align-items: center;
   gap: 16px;
-  padding: 16px 16px;
+  align-items: center;
+  padding: 14px 16px;
 }
 h1{
   font-size: 1.6rem;
   margin: 0;
 }
 .subtitle{
-  margin: 0;
+  margin: 2px 0 0 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
 }
 .nav a{
   color: var(--ink);
   text-decoration: none;
   margin-left: 16px;
-  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
 .nav a:hover{ border-color: var(--accent); }
 
-.section{
-  padding: 56px 0;
-}
+/* Sections */
+.section{ padding: 56px 0; }
 .section.alt{
-  background: linear-gradient(0deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02)), var(--panel);
+  background: linear-gradient(0deg, rgba(58,110,165,0.05), rgba(58,110,165,0.05));
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-h2{
-  margin-top: 0;
-  font-size: 1.4rem;
-}
+h2{ margin-top: 0; font-size: 1.4rem; }
+p{ margin: 0.6rem 0; }
+
 .link-list{
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 14px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 .link-list a{
-  padding: 6px 10px;
+  padding: 6px 12px;
   border: 1px solid var(--border);
   border-radius: 999px;
   text-decoration: none;
   color: var(--ink);
+  background: var(--panel);
 }
-.link-list a:hover{ border-color: var(--accent); }
+.link-list a:hover{ border-color: var(--accent); background: var(--accent-weak); }
 
+/* About layout */
+.about-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.about-photo{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.about-photo img{
+  width: 100%;
+  max-width: 280px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(31,41,55,0.08);
+}
+
+/* Cards */
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 .card{
-  background: var(--card);
+  background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 16px;
+  box-shadow: 0 8px 18px rgba(31,41,55,0.05);
 }
-.card h3{
-  margin-top: 0;
-  margin-bottom: 4px;
-  font-size: 1.1rem;
-}
-.card .tags{
-  color: var(--muted);
-  margin-top: 0;
-  font-size: 0.9rem;
-}
-.card .links a{
-  margin-right: 12px;
-}
+.card h3{ margin: 0 0 6px; font-size: 1.1rem; }
+.card .tags{ color: var(--muted); font-size: 0.9rem; margin: 0 0 8px; }
+.card .links a{ margin-right: 12px; }
 
-.pubs{
-  padding-left: 18px;
-}
+/* Publications */
+.pubs{ padding-left: 18px; }
+.pub-venue{ color: var(--muted); }
 
+/* Footer */
 .site-footer{
-  padding: 32px 0 48px;
+  padding: 28px 0 44px;
   color: var(--muted);
   text-align: center;
   border-top: 1px solid var(--border);
