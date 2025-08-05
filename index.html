@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Research & Data Portfolio</title>
-  <meta name="description" content="Research profile and data analytics portfolio." />
+  <title>Emma Shanahan, Ph.D. — Education Researcher & Data Analyst</title>
+  <meta name="description" content="Portfolio and research links for Emma Shanahan, Ph.D., an education researcher and data analyst specializing in reading and writing interventions." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>Your Name</h1>
-      <p class="subtitle">Researcher · Data Analyst</p>
-      <nav class="nav">
+    <div class="container header-grid">
+      <div>
+        <h1>Emma Shanahan, Ph.D.</h1>
+        <p class="subtitle">Education Researcher · Data Analyst</p>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#portfolio">Portfolio</a>
@@ -24,13 +26,21 @@
 
   <main>
     <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          Brief bio goes here. One–two sentences about your research interests (e.g., reading
-          interventions, data-based decision making), methodology strengths (e.g., R, Mplus, SQL, Tableau),
-          and what kinds of projects you take on.
-        </p>
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>
+            I’m an education researcher and data analyst focused on helping students learn to read and write longer, more complex words.
+            My work centers on <strong>reading and writing interventions</strong>, <strong>data-based decision making</strong>, and practical tools that support teachers’ instruction.
+            Methodologically, I work across <strong>randomized trials</strong> and quasi-experiments, multilevel and SEM approaches (often in <strong>R</strong> and <strong>Mplus</strong>), and build analysis workflows and dashboards with <strong>SQL</strong>, <strong>Tableau</strong>, and reproducible code.
+          </p>
+          <p>
+            I designed <strong>SHINE</strong>, a multisyllabic spelling intervention for students in grades 3–5, and collaborate on projects that connect assessment data to instruction at scale.
+          </p>
+        </div>
+        <figure class="about-photo">
+          <img src="E_Shanahan_cropped.jpg" alt="Headshot of Emma Shanahan" />
+        </figure>
       </div>
     </section>
 
@@ -38,17 +48,24 @@
       <div class="container">
         <h2>Research</h2>
         <ul class="link-list">
-          <li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
-          <li><a href="#" target="_blank" rel="noopener">ORCID</a></li>
-          <li><a href="#" target="_blank" rel="noopener">CV (PDF)</a></li>
-          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=VpYlKpgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0002-5594-4741" target="_blank" rel="noopener">ORCID</a></li>
+          <li><a href="E.Shanahan_CV_2025%20July.docx" target="_blank" rel="noopener">CV (DOCX)</a></li>
         </ul>
 
         <h3>Current Projects</h3>
-        <p>
-          A sentence or two about current lines of work and collaborations. Optionally link to a brief
-          project page or preprint.
-        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>Multisyllabic Spelling Intervention (SHINE)</h3>
+            <p class="tags">Grades 3–5 · RCT · Morphology</p>
+            <p><em>Manuscript in preparation.</em> Evaluating effects of a multisyllabic spelling intervention for upper‑elementary students (pilot randomized‑controlled trial).</p>
+          </article>
+          <article class="card">
+            <h3>LLMs for CBM Graph Interpretation</h3>
+            <p class="tags">AI in Education · Assessment</p>
+            <p><em>Manuscript in preparation.</em> Exploring how large language models can interpret curriculum‑based measurement (CBM) graphs to support data‑based decision making.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -61,7 +78,6 @@
             <p class="tags">R · SQL · Tableau</p>
             <p>1–2 lines on the question, data sources, and impact. Link to repo, dashboard, or write‑up.</p>
             <p class="links">
-              <a href="#" target="_blank" rel="noopener">GitHub</a>
               <a href="#" target="_blank" rel="noopener">Report / Dashboard</a>
             </p>
           </article>
@@ -70,7 +86,6 @@
             <p class="tags">Python · Mplus</p>
             <p>Short description of methods and findings. Include any visuals or notebooks.</p>
             <p class="links">
-              <a href="#" target="_blank" rel="noopener">Repo</a>
               <a href="#" target="_blank" rel="noopener">Write‑up</a>
             </p>
           </article>
@@ -83,12 +98,14 @@
         <h2>Selected Publications</h2>
         <ol class="pubs">
           <li>
-            Author, A., <strong>Your Name</strong>, Author, C. (Year). Paper title.
-            <em>Journal Name</em>. <a href="#" target="_blank" rel="noopener">link</a>
+            <strong>Shanahan, E.</strong>, Reno, E., Chandler, B. W., Novelli, C., An, J., Choi, S., & McMaster, K. L. (2024).
+            <em>…difficulties in pre‑kindergarten to fifth grade: A meta‑analysis.</em>
+            <span class="pub-venue">Reading & Writing</span>, 38(3), 627–650. <a href="https://doi.org/10.1007/s11145-024-10527-6" target="_blank" rel="noopener">DOI</a>
           </li>
           <li>
-            <strong>Your Name</strong> (Year). Title of dissertation or report.
-            <em>Institution</em>. <a href="#" target="_blank" rel="noopener">PDF</a>
+            <strong>Shanahan, E.</strong>, Choi, S., An, J., Casey‑Wilke, B., Birinci, S., Roberts, C., & McMaster, K. L. (2025).
+            <em>…for data‑based individualization: A meta‑analysis and synthesis.</em>
+            <span class="pub-venue">Journal of Learning Disabilities</span>, 58(1), 3–18. <a href="https://doi.org/10.1177/00222194241271335" target="_blank" rel="noopener">DOI</a>
           </li>
         </ol>
       </div>
@@ -98,9 +115,8 @@
       <div class="container">
         <h2>Contact</h2>
         <p>
-          Email: <a href="mailto:you@example.com">you@example.com</a>
-          &nbsp;•&nbsp; LinkedIn: <a href="#" target="_blank" rel="noopener">Profile</a>
-          &nbsp;•&nbsp; GitHub: <a href="#" target="_blank" rel="noopener">username</a>
+          Email: <a href="mailto:ewshanahan@gmail.com">ewshanahan@gmail.com</a>
+          &nbsp;•&nbsp; LinkedIn: <a href="https://www.linkedin.com/in/emmashanahan/" target="_blank" rel="noopener">/in/emmashanahan</a>
         </p>
       </div>
     </section>
@@ -108,7 +124,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Your Name. Built with HTML/CSS and hosted on GitHub Pages.</p>
+      <p>© <span id="year"></span> Emma Shanahan. Built with HTML/CSS and hosted on GitHub Pages.</p>
     </div>
   </footer>
 
@@ -117,3 +133,4 @@
   </script>
 </body>
 </html>
+
